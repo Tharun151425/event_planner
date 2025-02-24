@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Noto+Sans:ital,wght@0,500;1,500&family=Work+Sans:ital,wght@0,900;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+*{
+    --primary-color : #283618;
+    --secondary-color : #FEFAE0;
+    box-sizing: border-box;
+}
+
+.foods {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 5rem;
+    color: #bc6c25;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:normal;
+}
+
+.container {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;  
+    gap: 20px;  
+}
+
+
+.element {
+    background-color: var(--secondary-color);
+    margin: 1rem;
+    border: 2px solid rgb(1, 33, 145);
+    border-radius: 30px;
+    width: 22%;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    color: #283618;
+    transition: all 0.5s ease;
+    font-size: 1.25rem;
+    padding: 20px;  
+    position: relative;
+}
+
+.element:hover {
+    transform: scale(1.05) translateY(-10px); 
+    transition: all 0.3s ease; 
+}
+
+
+
+.name {
+    padding: 16px 16px 0px 16px;
+    font-family: "Yantramanav", serif;
+    text-transform: uppercase;
+    font-weight: 900;  
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.container h2 {
+    background-color: transparent;
+    color: #283618;
+    font-size:2em;
+    z-index:10;
+}
+
+.element p {
+    background-color: var(--secondary-color);
+    color:black;
+    width: 80%;
+    font-weight:200;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 90%;
+    height: 250px;
+    border-radius: 50px;
+    object-fit: cover;
+    overflow: hidden;
+    padding-bottom:16px;
+}
+
+.subheading {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-family: "Yantramanav", serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-bottom: 4px;
+}
+
+.info {
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom:14px;
+
+}
+
+.section {
+    margin-bottom: 24px;
+}
+.section p{
+    font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 10px;
+}

@@ -1,4 +1,3 @@
-
 import './App.css'
 import EventPlanner from './Components/EventPlanner'
 
