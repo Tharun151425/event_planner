@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './EventPlanner.css';
+import EventClock from './EventClock';
 
 const EventPlanner = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -149,11 +150,12 @@ const EventPlanner = () => {
       </nav>
 
       <header id="home" className="hero-section">
-        <div className="hero-content">
-          <h1 className="title">Plan Your Perfect Event</h1>
-          <p className="subtitle">From birthdays to corporate meetings, we've got you covered</p>
-          <button className="cta-button">Get Started</button>
-        </div>
+      <div className="hero-content">
+  <EventClock />
+  <h1 className="title">Plan Your Perfect Event</h1>
+  <p className="subtitle">From birthdays to corporate meetings, we've got you covered</p>
+  <button className="cta-button">Get Started</button>
+</div>
         <div className="wave-container">
           <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fillOpacity="1" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,165.3C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -205,7 +207,7 @@ const EventPlanner = () => {
         <div className="gallery-grid">
           {[1, 2, 3, 4, 5].map(num => (
             <div className="gallery-item" key={num}>
-              <img src={`/api/placeholder/600/400`} alt={`Event ${num}`} />
+              <img src={`/img${num}.jpg`} alt={`Event ${num}`} />
               <div className="gallery-overlay">
                 <span>View Event</span>
               </div>
